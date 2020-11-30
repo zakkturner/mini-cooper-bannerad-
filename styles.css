@@ -1,0 +1,166 @@
+.bannerFrame{
+    width: 300px;
+    height: 250px;
+    background: #00a4ab;
+    position: relative;
+}
+
+.bannerFrame__container{
+    width: 100%;
+    height: 100%;
+    /* padding: 15px; */
+
+}
+
+/* Title Text */
+
+.bannerFrame__container__title-container__imgCont{
+    width: 200px;
+    height: 0px;
+}
+
+
+
+.bannerFrame__container__title-container__imgCont--txt{
+    width: 100%;
+}
+
+.bannerFrame__container__title-container__colorTitle{
+    width: 300px;
+    height: 0px;
+}
+.bannerFrame__container__title-container__colorTitle--txt{
+    width: 100%;
+}
+
+/* Car */
+.bannerFrame__container__car-container{
+    position: relative;
+}
+.bannerFrame__container__car-container--car{
+    width: 100%;
+}
+
+.bannerFrame__container__car-container--lights{
+    width: 100%;
+    position: absolute;
+    bottom: 6px;
+    
+}
+
+.bannerFrame__container__car-container--bcar,
+.bannerFrame__container__car-container--ocar,
+.bannerFrame__container__car-container--rcar{
+    opacity: 0;
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 4%;
+    
+}
+
+/* Button */
+
+.bannerFrame__container__explore-container{
+    position: absolute;
+    background-color: #272727;
+    width: 150px;
+    height: 30px;
+    bottom: 5%;
+    left: 3%;
+    z-index: 99;
+}
+
+
+.bannerFrame__container__explore-container--explore{
+  width: 300px;
+    position: absolute;
+    bottom: -35%;
+    /* left: 10%; */
+}
+.bannerFrame__container__explore-container__arrow1{
+    display: flex;
+    position: absolute;
+    bottom: -45%;
+    left: -5px;
+    width: 335px;
+}
+
+.bannerFrame__container__explore-container__arrow2{
+    display: flex;
+    position: absolute;
+    bottom: -45%;
+    left: -6px;
+    width: 335px;
+}
+
+.bannerFrame__container__explore-container__arrows--arrow{
+    width: 100%;
+}
+
+/* Logo */
+
+.bannerFrame__container__logoCont{
+   position: absolute;
+    bottom: -3%;
+    width: 100%;
+}
+
+.bannerFrame__container__logoCont--logo{
+    width: 100%;
+}
+
+
+/* Background logo */
+
+.bannerFrame__container__back-logo{
+width: 100%;
+position: absolute;
+bottom: 0;
+opacity: 0;
+}
+
+.bannerFrame__container__back-logo--logo{
+    width: 100%;
+}
+
+/* Color Swatches */
+
+.bannerFrame__container__swatch-container{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 150px;
+    top: 22px;
+    z-index: 999;
+}
+
+.bannerFrame__container__swatch-container--blue{
+    background: -moz-linear-gradient(top, #07a2d4 0%, #7eaed6 50%, #07a2d4 51%, #07a2d4 100%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bannerFrame__container__swatch-container--orange{
+    background: -moz-linear-gradient(top, #dd8601 0%, #dbb06f 50%, #dd8601 51%, #dd8601 100%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bannerFrame__container__swatch-container--red{
+    background: -moz-linear-gradient(top, #93121b 0%, #914f54 50%, #93121b 51%, #93121b 100%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.selected{
+    border: 2px solid white;
+}
+.cselected{
+    opacity: 1;
+}
