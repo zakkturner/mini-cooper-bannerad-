@@ -8,7 +8,7 @@
 .bannerFrame__container{
     width: 100%;
     height: 100%;
-    /* padding: 15px; */
+
 
 }
 
@@ -70,13 +70,10 @@
     left: 3%;
     z-index: 99;
 }
-
-
 .bannerFrame__container__explore-container--explore{
   width: 300px;
     position: absolute;
     bottom: -35%;
-    /* left: 10%; */
 }
 .bannerFrame__container__explore-container__arrow1{
     display: flex;
