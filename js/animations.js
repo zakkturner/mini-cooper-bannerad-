@@ -26,8 +26,22 @@ const Timeline = {
         Timeline.frame1();
         setTimeout(()=>{Timeline.colorPick()},16000)
     },
+    reset: function(){
+        TweenLite.set(title1,{x: 0, opacity: 1} );
+        TweenLite.set(title2,{x: 0, opacity: 1} );
+        TweenLite.set(title3,{x: 0, opacity: 1} );
+        TweenLite.set(title4,{x: 0, opacity: 1} );
+        TweenLite.set(car,{x: 0, opacity: 1} );
+        TweenLite.set(exploreCont,{y: 0, opacity: 1} );
+        TweenLite.set(explore,{ opacity: 1} );
+        TweenLite.set(logo,{x: 0, opacity: 1} );
+        TweenLite.set([arrow1,arrow2], {x:0, opacity:1});
+        TweenLite.set(bannerFrame, {css:{boxShadow: "none"}});
+    },
+
     replay: function(){
         replay.addEventListener('click', function(){
+            Timeline.reset();
             Timeline.frame1();
         setTimeout(()=>{Timeline.colorPick()},16000)
         })
@@ -86,7 +100,8 @@ const Timeline = {
         bannerFrame.addEventListener('mouseleave', ()=>{
             TweenLite.to(arrow2, {duration: .5, x: 0})
         });
-        TweenLite.from(replay, {duration: .8, delay: 17, css:{display: "none"}, x: 100, ease: "power3.inOut"});
+        TweenLite.from(replay, {duration: .1, delay: 18, css:{display: "none"}} );
+        TweenLite.from(replay, {duration: .7, delay:18.1,x: 100, opacity: 0, ease: "power3.inOut"})
         Timeline.arrowHover();
     },
     colorPick: function(){
