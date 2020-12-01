@@ -173,3 +173,16 @@ opacity: 0;
 .cselected{
     opacity: 1;
 }
+
+.bannerFrame__container__title-container__rpCont{
+    display: flex;
+    align-items: center;
+    height: 10%;
+    width: 12%;
+    color: #fff;
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    z-index: 999;
+    cursor: pointer;
+}
